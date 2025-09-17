@@ -1,5 +1,6 @@
 package listener;
 
+import dto.CalculatorRequest;
 import serviceImp.CalculatorService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,24 +27,20 @@ public class CalculatorKafkaListener {
     private KafkaTemplate<String, String> kafkaTemplate;
 
     @KafkaListener(topics = "calculator-requests", groupId = "calculator-core-group")
-    public void listen(String message, @Header(name = "traceId", required = false) String traceId) {
+    public void listen(CalculatorRequest request, @Header(name = "traceId", required = false) String traceId) {
         try {
             if (traceId != null) MDC.put("traceId", traceId);
 
-            String[] parts = message.split(",");
-            String operation = parts[0];
-            BigDecimal a = new BigDecimal(parts[1]);
-            BigDecimal b = new BigDecimal(parts[2]);
-
-            BigDecimal result = switch (operation.toLowerCase()) {
-                case "sum" -> calculatorService.sum(a, b);
-                case "subtract" -> calculatorService.subtract(a, b);
-                case "multiply" -> calculatorService.multiply(a, b);
-                case "divide" -> calculatorService.divide(a, b);
-                default -> throw new IllegalArgumentException("Unknown operation: " + operation);
+            BigDecimal result = switch (request.getOperation().toLowerCase()) {
+                case "sum" -> calculatorService.sum(request.getA(), request.getB());
+                case "subtract" -> calculatorService.subtract(request.getA(), request.getB());
+                case "multiply" -> calculatorService.multiply(request.getA(), request.getB());
+                case "divide" -> calculatorService.divide(request.getA(), request.getB());
+                default -> throw new IllegalArgumentException("Unknown operation: " + request.getOperation());
             };
 
-            logger.info("Calculated {}: {} {} {} = {}", operation, a, operation, b, result);
+            logger.info("Calculated {}: {} {} {} = {}", request.getOperation(),
+                    request.getA(), request.getOperation(), request.getB(), result);
 
             kafkaTemplate.send(
                     MessageBuilder.withPayload(result.toPlainString())
@@ -55,5 +52,6 @@ public class CalculatorKafkaListener {
             MDC.clear();
         }
     }
+
 
 }

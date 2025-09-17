@@ -15,6 +15,7 @@
     <modules>
         <module>calculator-core</module>
         <module>calculator-rest</module>
+        <module>calculator-common</module>
     </modules>
 
     <properties>

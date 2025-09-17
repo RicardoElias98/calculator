@@ -1,5 +1,4 @@
-config/KafkaConfig.class
-app/CalculatorCoreApplication.class
 listener/CalculatorKafkaListener.class
 serviceImp/CalculatorService.class
+app/CalculatorCoreApplication.class
 test/CalculatorServiceTest.class

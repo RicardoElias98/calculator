@@ -1,3 +1,6 @@
+config/WebConfig.class
+config/TraceIdInterceptor.class
+exceptionHandler/GlobalExceptionHandler.class
 controller/CalculatorController.class
 controller/CalculatorController$Result.class
 app/CalculatorRestApplication.class

@@ -1,6 +1,7 @@
 package controller;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import dto.CalculatorRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
@@ -28,10 +29,10 @@ public class CalculatorController {
 
     private BigDecimal sendRequest(String operation, BigDecimal a, BigDecimal b) throws InterruptedException {
         String traceId = MDC.get("traceId");
-        String payload = operation + "," + a + "," + b;
+        CalculatorRequest request = new CalculatorRequest(operation, a, b);
 
         kafkaTemplate.send(
-                MessageBuilder.withPayload(payload)
+                MessageBuilder.withPayload(request)
                         .setHeader(KafkaHeaders.TOPIC, "calculator-requests")
                         .setHeader("traceId", traceId)
                         .build()
