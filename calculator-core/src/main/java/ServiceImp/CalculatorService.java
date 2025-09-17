@@ -36,10 +36,12 @@ public class CalculatorService {
 
     public BigDecimal divide(BigDecimal a, BigDecimal b) {
         logger.info("DIVIDE input: a={}, b={}", a, b);
-        if (b.compareTo(BigDecimal.ZERO) == 0) {
+
+        if (b == null || b.compareTo(BigDecimal.ZERO) == 0) {
             logger.error("Division by zero attempted: a={}, b={}", a, b);
-            throw new ArithmeticException("Division by zero is not possible");
+            return null;
         }
+
         BigDecimal result = a.divide(b, DIVISION_SCALE, RoundingMode.HALF_UP);
         logger.info("DIVIDE result: {}", result);
         return result;
