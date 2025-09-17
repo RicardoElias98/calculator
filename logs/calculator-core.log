@@ -117,8 +117,8 @@
 2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 13:29:25 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 13:29:25 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 13:29:40 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=2
-2025-09-17 13:29:40 INFO  ServiceImp.CalculatorService - DIVIDE result: 2.50000000000000000000
+2025-09-17 13:29:40 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=2
+2025-09-17 13:29:40 INFO  serviceImp.CalculatorService - DIVIDE result: 2.50000000000000000000
 2025-09-17 13:29:40 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -223,8 +223,8 @@
 2025-09-17 13:29:40 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112180665
 2025-09-17 13:29:40 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 13:29:40 INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 3 with epoch 0
-2025-09-17 13:29:48 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 13:29:48 ERROR ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 13:29:48 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 13:29:48 ERROR serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 13:31:20 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
 2025-09-17 13:31:20 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
 2025-09-17 13:31:20 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Member consumer-calculator-core-group-1-5e93942d-5b38-420a-8e1c-47bc76c366e2 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
@@ -376,8 +376,8 @@
 2025-09-17 13:31:36 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 13:31:36 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 13:31:36 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 13:36:31 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 13:36:31 INFO  ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 13:36:31 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 13:36:31 INFO  serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
 2025-09-17 13:36:31 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -632,8 +632,8 @@
 2025-09-17 14:03:58 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:03:58 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:03:58 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:04:09 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:04:09 INFO  ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:04:09 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:04:09 INFO  serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
 2025-09-17 14:04:09 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -889,8 +889,8 @@
 2025-09-17 14:09:40 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:09:40 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:09:40 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:09:50 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:09:50 INFO  ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:09:50 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:09:50 INFO  serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
 2025-09-17 14:09:50 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -1149,8 +1149,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:24:41 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:24:41 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=6, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:24:41 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:25:43 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:25:43 INFO  ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:25:43 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:25:43 INFO  serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
 2025-09-17 14:25:43 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -1255,8 +1255,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:25:43 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758115543633
 2025-09-17 14:25:43 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 14:25:43 INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 11 with epoch 0
-2025-09-17 14:26:25 INFO  ServiceImp.CalculatorService - SUM input: a=5, b=1
-2025-09-17 14:26:25 INFO  ServiceImp.CalculatorService - SUM result: 6
+2025-09-17 14:26:25 INFO  serviceImp.CalculatorService - SUM input: a=5, b=1
+2025-09-17 14:26:25 INFO  serviceImp.CalculatorService - SUM result: 6
 2025-09-17 14:29:38 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
 2025-09-17 14:29:38 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
 2025-09-17 14:29:38 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Member consumer-calculator-core-group-1-906ac438-9503-4863-98ce-0d5cbec3fcab sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
@@ -1408,8 +1408,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:29:55 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:29:55 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=8, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:29:55 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:30:08 INFO  ServiceImp.CalculatorService - SUM input: a=5, b=1
-2025-09-17 14:30:08 INFO  ServiceImp.CalculatorService - SUM result: 6
+2025-09-17 14:30:08 INFO  serviceImp.CalculatorService - SUM input: a=5, b=1
+2025-09-17 14:30:08 INFO  serviceImp.CalculatorService - SUM result: 6
 2025-09-17 14:30:08 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -1514,8 +1514,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:30:08 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758115808239
 2025-09-17 14:30:08 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 14:30:08 INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 13 with epoch 0
-2025-09-17 14:31:55 INFO  ServiceImp.CalculatorService - SUM input: a=5, b=1
-2025-09-17 14:31:55 INFO  ServiceImp.CalculatorService - SUM result: 6
+2025-09-17 14:31:55 INFO  serviceImp.CalculatorService - SUM input: a=5, b=1
+2025-09-17 14:31:55 INFO  serviceImp.CalculatorService - SUM result: 6
 2025-09-17 14:32:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Request joining group due to: group is already rebalancing
 2025-09-17 14:32:34 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
 2025-09-17 14:32:34 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
@@ -1666,8 +1666,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:32:50 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:32:50 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:32:50 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:33:35 INFO  ServiceImp.CalculatorService - SUM input: a=5, b=1
-2025-09-17 14:33:35 INFO  ServiceImp.CalculatorService - SUM result: 6
+2025-09-17 14:33:35 INFO  serviceImp.CalculatorService - SUM input: a=5, b=1
+2025-09-17 14:33:35 INFO  serviceImp.CalculatorService - SUM result: 6
 2025-09-17 14:33:35 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -1772,8 +1772,8 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:33:35 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758116015607
 2025-09-17 14:33:35 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 14:33:35 INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 15 with epoch 0
-2025-09-17 14:36:28 INFO  ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:36:28 INFO  ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:36:28 INFO  serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:36:28 INFO  serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
 2025-09-17 14:43:26 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
 2025-09-17 14:43:26 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
 2025-09-17 14:43:26 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Member consumer-calculator-core-group-1-d693d789-214e-4b47-9586-9107d6680391 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
@@ -1925,9 +1925,9 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:43:48 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 14:43:48 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 14:43:48 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
-2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] Listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
 2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -2032,49 +2032,49 @@ org.apache.kafka.common.errors.DisconnectException: null
 2025-09-17 14:44:12 INFO  [traceId=fcca6eff-3a3c-4573-a7f0-fcc41f1e1363] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758116652758
 2025-09-17 14:44:12 INFO  [traceId=] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 14:44:12 INFO  [traceId=] o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 17 with epoch 0
-2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
-2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] Listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
-2025-09-17 14:47:49 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:49 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:44:50 INFO  [traceId=2fc538f9-5791-4f4c-84aa-4ad83f1b8e0b] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 14:47:49 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:49 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:49 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:49 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:50 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:50 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:50 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:50 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:50 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:50 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:50 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:50 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:50 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:50 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:50 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:50 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:51 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:51 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:51 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:51 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:51 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:51 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:51 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:51 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:51 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:51 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:51 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:51 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:52 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:52 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:52 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:52 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:52 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:52 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:52 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:52 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:52 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:52 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:52 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:52 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:53 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:53 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:53 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:53 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:53 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:53 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:53 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:53 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:53 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:53 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:53 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 14 for partition calculator-requests-0
 2025-09-17 14:47:53 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:54 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:54 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:54 INFO  [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:54 ERROR [traceId=b3131c1d-3b8c-4cba-b962-d6fc588cf0f8] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:54 ERROR [traceId=] o.s.k.listener.DefaultErrorHandler - Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for calculator-requests-0@14
-org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void Listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
+org.springframework.kafka.listener.ListenerExecutionFailedException: listener method 'public void listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2994)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2901)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2865)
@@ -2094,8 +2094,8 @@ org.springframework.kafka.listener.ListenerExecutionFailedException: Listener me
 		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 		at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 Caused by: java.lang.ArithmeticException: Division by zero is not possible
-	at ServiceImp.CalculatorService.divide(CalculatorService.java:41)
-	at Listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
+	at serviceImp.CalculatorService.divide(CalculatorService.java:41)
+	at listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -2110,46 +2110,46 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 	... 10 common frames omitted
-2025-09-17 14:47:55 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:55 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:55 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:55 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:55 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:55 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:55 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:55 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:55 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:55 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:55 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:55 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:56 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:56 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:56 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:56 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:56 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:56 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:56 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:56 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:56 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:56 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:56 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:56 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:57 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:57 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:57 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:57 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:57 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:57 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:57 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:57 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:57 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:57 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:57 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:57 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:58 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:58 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:58 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:58 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:58 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:58 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:58 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:58 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:58 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:58 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:58 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:58 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:59 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:59 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:59 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:59 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:59 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 15 for partition calculator-requests-0
 2025-09-17 14:47:59 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:47:59 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:47:59 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:47:59 INFO  [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:47:59 ERROR [traceId=97a803a6-a241-4b6a-bafd-036bb95158ca] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:47:59 ERROR [traceId=] o.s.k.listener.DefaultErrorHandler - Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for calculator-requests-0@15
-org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void Listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
+org.springframework.kafka.listener.ListenerExecutionFailedException: listener method 'public void listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2994)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2901)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2865)
@@ -2169,8 +2169,8 @@ org.springframework.kafka.listener.ListenerExecutionFailedException: Listener me
 		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 		at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 Caused by: java.lang.ArithmeticException: Division by zero is not possible
-	at ServiceImp.CalculatorService.divide(CalculatorService.java:41)
-	at Listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
+	at serviceImp.CalculatorService.divide(CalculatorService.java:41)
+	at listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
 	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
@@ -2184,49 +2184,49 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 	... 10 common frames omitted
-2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
-2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] Listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
-2025-09-17 14:50:19 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:19 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 14:48:54 INFO  [traceId=2c2b6bd5-3c2e-4107-abbe-a44de35f8c1d] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 14:50:19 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:19 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:19 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:19 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:19 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:19 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:19 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:19 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:19 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:19 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:20 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:20 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:20 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:20 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:20 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:20 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:20 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:20 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:20 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:20 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:20 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:20 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:21 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:21 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:21 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:21 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:21 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:21 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:21 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:21 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:21 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:21 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:21 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:21 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:22 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:22 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:22 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:22 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:22 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:22 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:22 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:22 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:22 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:22 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:22 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:22 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:23 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:23 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:23 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:23 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:23 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 17 for partition calculator-requests-0
 2025-09-17 14:50:23 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:23 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:23 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:23 INFO  [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:23 ERROR [traceId=af54093b-66aa-4ac9-b650-e92b370a6875] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:23 ERROR [traceId=] o.s.k.listener.DefaultErrorHandler - Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for calculator-requests-0@17
-org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void Listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
+org.springframework.kafka.listener.ListenerExecutionFailedException: listener method 'public void listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2994)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2901)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2865)
@@ -2246,8 +2246,8 @@ org.springframework.kafka.listener.ListenerExecutionFailedException: Listener me
 		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 		at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 Caused by: java.lang.ArithmeticException: Division by zero is not possible
-	at ServiceImp.CalculatorService.divide(CalculatorService.java:41)
-	at Listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
+	at serviceImp.CalculatorService.divide(CalculatorService.java:41)
+	at listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
 	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
@@ -2261,46 +2261,46 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 	at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 	... 10 common frames omitted
-2025-09-17 14:50:40 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:40 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:40 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:40 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:40 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:40 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:41 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:41 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:41 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:41 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:41 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:41 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:41 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:41 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:41 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:41 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:41 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:41 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:42 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:42 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:42 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:42 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:42 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:42 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:42 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:42 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:42 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:42 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:42 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:42 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:43 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:43 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:43 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:43 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:43 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:43 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:43 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:43 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:43 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:43 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:43 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:43 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:44 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:44 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:44 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:44 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:44 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:44 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:44 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:44 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:44 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:44 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:44 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Seeking to offset 18 for partition calculator-requests-0
 2025-09-17 14:50:44 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - Record in retry and not yet recovered
-2025-09-17 14:50:45 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - DIVIDE input: a=5, b=0
-2025-09-17 14:50:45 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] ServiceImp.CalculatorService - Division by zero attempted: a=5, b=0
+2025-09-17 14:50:45 INFO  [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - DIVIDE input: a=5, b=0
+2025-09-17 14:50:45 ERROR [traceId=191f7d8a-9440-4b2d-9340-dd2ff2769a3f] serviceImp.CalculatorService - Division by zero attempted: a=5, b=0
 2025-09-17 14:50:45 ERROR [traceId=] o.s.k.listener.DefaultErrorHandler - Backoff FixedBackOff{interval=0, currentAttempts=10, maxAttempts=9} exhausted for calculator-requests-0@18
-org.springframework.kafka.listener.ListenerExecutionFailedException: Listener method 'public void Listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
+org.springframework.kafka.listener.ListenerExecutionFailedException: listener method 'public void listener.CalculatorKafkaListener.listen(java.lang.String,java.lang.String)' threw exception
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.decorateException(KafkaMessageListenerContainer.java:2994)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2901)
 	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.invokeOnMessage(KafkaMessageListenerContainer.java:2865)
@@ -2320,8 +2320,8 @@ org.springframework.kafka.listener.ListenerExecutionFailedException: Listener me
 		at org.springframework.kafka.listener.adapter.RecordMessagingMessageListenerAdapter.onMessage(RecordMessagingMessageListenerAdapter.java:50)
 		at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.doInvokeOnMessage(KafkaMessageListenerContainer.java:2887)
 Caused by: java.lang.ArithmeticException: Division by zero is not possible
-	at ServiceImp.CalculatorService.divide(CalculatorService.java:41)
-	at Listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
+	at serviceImp.CalculatorService.divide(CalculatorService.java:41)
+	at listener.CalculatorKafkaListener.listen(CalculatorKafkaListener.java:42)
 	at jdk.internal.reflect.GeneratedMethodAccessor18.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
@@ -2497,9 +2497,9 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 2025-09-17 15:00:48 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 15:00:48 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=19, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 15:00:48 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] ServiceImp.CalculatorService - DIVIDE input: a=5, b=-1
-2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] ServiceImp.CalculatorService - DIVIDE result: -5.00000000000000000000
-2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] Listener.CalculatorKafkaListener - Calculated divide: 5 divide -1 = -5.00000000000000000000
+2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] serviceImp.CalculatorService - DIVIDE input: a=5, b=-1
+2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] serviceImp.CalculatorService - DIVIDE result: -5.00000000000000000000
+2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] listener.CalculatorKafkaListener - Calculated divide: 5 divide -1 = -5.00000000000000000000
 2025-09-17 15:04:00 INFO  [traceId=4f89a752-a803-40f2-bdfd-8d5c9e52633c] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -2754,9 +2754,9 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 2025-09-17 15:11:12 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 15:11:12 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=20, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 15:11:12 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] ServiceImp.CalculatorService - DIVIDE input: a=5, b=-1
-2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] ServiceImp.CalculatorService - DIVIDE result: -5.00000000000000000000
-2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] Listener.CalculatorKafkaListener - Calculated divide: 5 divide -1 = -5.00000000000000000000
+2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] serviceImp.CalculatorService - DIVIDE input: a=5, b=-1
+2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] serviceImp.CalculatorService - DIVIDE result: -5.00000000000000000000
+2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] listener.CalculatorKafkaListener - Calculated divide: 5 divide -1 = -5.00000000000000000000
 2025-09-17 15:11:33 INFO  [traceId=c6b22519-251e-46df-b44c-d09b7e4db4de] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -3445,9 +3445,9 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 2025-09-17 15:40:09 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 15:40:09 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=21, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 15:40:09 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] ServiceImp.CalculatorService - SUM input: a=5, b=2
-2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] ServiceImp.CalculatorService - SUM result: 7
-2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] Listener.CalculatorKafkaListener - Calculated sum: 5 sum 2 = 7
+2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] serviceImp.CalculatorService - SUM input: a=5, b=2
+2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] serviceImp.CalculatorService - SUM result: 7
+2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] listener.CalculatorKafkaListener - Calculated sum: 5 sum 2 = 7
 2025-09-17 15:40:44 INFO  [traceId=e586108a-9011-4c3e-906a-e1f50799e51f] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -3848,9 +3848,9 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 2025-09-17 15:46:51 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
 2025-09-17 15:46:51 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=22, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
 2025-09-17 15:46:51 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
-2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
-2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] Listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
 2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
 	acks = -1
 	auto.include.jmx.reporter = true
@@ -3955,6 +3955,267 @@ Caused by: java.lang.ArithmeticException: Division by zero is not possible
 2025-09-17 15:48:06 INFO  [traceId=70822d84-a516-442e-b2fb-9559ba8ee7d8] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758120486613
 2025-09-17 15:48:06 INFO  [traceId=] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
 2025-09-17 15:48:06 INFO  [traceId=] o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 25 with epoch 0
-2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] ServiceImp.CalculatorService - DIVIDE input: a=5, b=1
-2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] ServiceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
-2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] Listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 15:48:54 INFO  [traceId=35a72b86-7f1e-43b9-8a4b-9e1cb70a44f7] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 15:56:40 INFO  [traceId=] app.CalculatorCoreApplication - Starting CalculatorCoreApplication using Java 17.0.16 with PID 5851 (/Users/beatrizseco/Desktop/Elias Code/calculator/calculator-core/target/classes started by beatrizseco in /Users/beatrizseco/Desktop/Elias Code/calculator)
+2025-09-17 15:56:40 INFO  [traceId=] app.CalculatorCoreApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 15:56:42 INFO  [traceId=] o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-core-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator-core-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-09-17 15:56:42 INFO  [traceId=] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 15:56:42 INFO  [traceId=] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 15:56:42 INFO  [traceId=] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 15:56:42 INFO  [traceId=] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758121002807
+2025-09-17 15:56:42 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Subscribed to topic(s): calculator-requests
+2025-09-17 15:56:42 INFO  [traceId=] app.CalculatorCoreApplication - Started CalculatorCoreApplication in 3.471 seconds (process running for 5.032)
+2025-09-17 15:56:43 INFO  [traceId=] org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 15:56:43 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-17 15:56:43 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 15:56:43 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Request joining group due to: need to re-join with the given member-id: consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d
+2025-09-17 15:56:43 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Successfully joined group with generation Generation{generationId=61, memberId='consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d', protocol='range'}
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Finished assignment for group at generation 61: {consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d=Assignment(partitions=[calculator-requests-0])}
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Successfully synced group in generation Generation{generationId=61, memberId='consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d', protocol='range'}
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Notifying assignor about the new Assignment(partitions=[calculator-requests-0])
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
+2025-09-17 15:56:46 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=24, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-17 15:56:46 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Request joining group due to: group is already rebalancing
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
+2025-09-17 15:56:52 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Successfully joined group with generation Generation{generationId=62, memberId='consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d', protocol='range'}
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Finished assignment for group at generation 62: {consumer-calculator-core-group-2-912b26d8-c58e-4164-baf3-851bc11d2694=Assignment(partitions=[]), consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d=Assignment(partitions=[calculator-requests-0])}
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Successfully synced group in generation Generation{generationId=62, memberId='consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d', protocol='range'}
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Notifying assignor about the new Assignment(partitions=[calculator-requests-0])
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
+2025-09-17 15:56:52 INFO  [traceId=] o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=24, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-17 15:56:52 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 15:57:15 INFO  [traceId=d205bab0-a2b6-4fe2-a9f2-32fff1fb86e0] o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758121035985
+2025-09-17 15:57:16 INFO  [traceId=] org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 15:57:16 INFO  [traceId=] o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 27 with epoch 0
+2025-09-17 15:57:34 INFO  [traceId=fdc83d2b-d90e-474e-af62-3b0f8e97b331] serviceImp.CalculatorService - DIVIDE input: a=5, b=1
+2025-09-17 15:57:34 INFO  [traceId=fdc83d2b-d90e-474e-af62-3b0f8e97b331] serviceImp.CalculatorService - DIVIDE result: 5.00000000000000000000
+2025-09-17 15:57:34 INFO  [traceId=fdc83d2b-d90e-474e-af62-3b0f8e97b331] listener.CalculatorKafkaListener - Calculated divide: 5 divide 1 = 5.00000000000000000000
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
+2025-09-17 16:03:54 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Member consumer-calculator-core-group-1-359dd834-798a-4082-9e6f-d9222545ff3d sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Unsubscribed all topics or patterns and assigned partitions
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 16:03:54 INFO  [traceId=] o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-1, groupId=calculator-core-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-calculator-core-group-1 unregistered
+2025-09-17 16:03:55 INFO  [traceId=] o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: Consumer stopped
+2025-09-17 16:03:55 INFO  [traceId=] o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-17 16:03:55 INFO  [traceId=] o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered

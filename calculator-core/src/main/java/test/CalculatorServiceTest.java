@@ -1,6 +1,6 @@
 package test;
 
-import ServiceImp.CalculatorService;
+import serviceImp.CalculatorService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
