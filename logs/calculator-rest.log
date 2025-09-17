@@ -1,0 +1,703 @@
+2025-09-17 13:29:17 INFO  app.CalculatorRestApplication - Starting CalculatorRestApplication using Java 17.0.16 with PID 2789 (/Users/beatrizseco/Desktop/Elias Code/calculator/calculator-rest/target/classes started by beatrizseco in /Users/beatrizseco/Desktop/Elias Code/calculator)
+2025-09-17 13:29:17 INFO  app.CalculatorRestApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 13:29:19 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 13:29:19 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 13:29:19 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 13:29:19 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 13:29:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 13:29:19 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2374 ms
+2025-09-17 13:29:21 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 13:29:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 13:29:21 INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-09-17 13:29:21 INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112161812
+2025-09-17 13:29:21 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Subscribed to topic(s): calculator-responses
+2025-09-17 13:29:21 INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-core-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator-core-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-09-17 13:29:21 INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 13:29:21 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112161873
+2025-09-17 13:29:21 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Subscribed to topic(s): calculator-requests
+2025-09-17 13:29:21 INFO  app.CalculatorRestApplication - Started CalculatorRestApplication in 5.867 seconds (process running for 7.423)
+2025-09-17 13:29:22 INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 13:29:22 INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] (Re-)joining group
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Request joining group due to: need to re-join with the given member-id: consumer-calculator-group-1-314aae15-3e07-4021-a55b-69aad5b599a0
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Request joining group due to: need to re-join with the given member-id: consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] (Re-)joining group
+2025-09-17 13:29:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Successfully joined group with generation Generation{generationId=3, memberId='consumer-calculator-group-1-314aae15-3e07-4021-a55b-69aad5b599a0', protocol='range'}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully joined group with generation Generation{generationId=4, memberId='consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079', protocol='range'}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Finished assignment for group at generation 3: {consumer-calculator-group-1-314aae15-3e07-4021-a55b-69aad5b599a0=Assignment(partitions=[calculator-responses-0])}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Finished assignment for group at generation 4: {consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079=Assignment(partitions=[]), consumer-calculator-core-group-1-5e93942d-5b38-420a-8e1c-47bc76c366e2=Assignment(partitions=[calculator-requests-0])}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Successfully synced group in generation Generation{generationId=3, memberId='consumer-calculator-group-1-314aae15-3e07-4021-a55b-69aad5b599a0', protocol='range'}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully synced group in generation Generation{generationId=4, memberId='consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079', protocol='range'}
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Notifying assignor about the new Assignment(partitions=[])
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Notifying assignor about the new Assignment(partitions=[calculator-responses-0])
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Adding newly assigned partitions: 
+2025-09-17 13:29:25 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: []
+2025-09-17 13:29:25 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Adding newly assigned partitions: calculator-responses-0
+2025-09-17 13:29:25 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-responses-0 to the committed offset FetchPosition{offset=1, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-17 13:29:25 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-group: partitions assigned: [calculator-responses-0]
+2025-09-17 13:29:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-17 13:29:40 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-09-17 13:29:40 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+2025-09-17 13:29:40 INFO  controller.CalculatorController - Sending request: operation=divide, a=5, b=2
+2025-09-17 13:29:40 INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = producer-1
+	compression.gzip.level = -1
+	compression.lz4.level = 9
+	compression.type = none
+	compression.zstd.level = 3
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = true
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2025-09-17 13:29:40 INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 13:29:40 INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Instantiated an idempotent producer.
+2025-09-17 13:29:40 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 13:29:40 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 13:29:40 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112180310
+2025-09-17 13:29:40 INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 13:29:40 INFO  o.a.k.c.p.i.TransactionManager - [Producer clientId=producer-1] ProducerId set to 2 with epoch 0
+2025-09-17 13:29:40 INFO  controller.CalculatorController - Received response: 2.50000000000000000000
+2025-09-17 13:29:48 INFO  controller.CalculatorController - Sending request: operation=divide, a=5, b=0
+2025-09-17 13:29:48 INFO  controller.CalculatorController - Received response: ERROR: Division by zero is not possible
+2025-09-17 13:29:48 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NumberFormatException: Too many nonzero exponent digits.] with root cause
+java.lang.NumberFormatException: Too many nonzero exponent digits.
+	at java.base/java.math.BigDecimal.parseExp(BigDecimal.java:734)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:647)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:471)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:900)
+	at controller.CalculatorController.sendRequest(CalculatorController.java:30)
+	at controller.CalculatorController.divide(CalculatorController.java:54)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Request joining group due to: group is already rebalancing
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Revoke previously assigned partitions 
+2025-09-17 13:31:22 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: []
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079', protocol='range'}
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Finished assignment for group at generation 5: {consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079=Assignment(partitions=[calculator-requests-0])}
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079', protocol='range'}
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Notifying assignor about the new Assignment(partitions=[calculator-requests-0])
+2025-09-17 13:31:22 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Adding newly assigned partitions: calculator-requests-0
+2025-09-17 13:31:22 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-requests-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-17 13:31:22 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: [calculator-requests-0]
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Revoke previously assigned partitions calculator-responses-0
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Revoke previously assigned partitions calculator-requests-0
+2025-09-17 13:31:23 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-group: partitions revoked: [calculator-responses-0]
+2025-09-17 13:31:23 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions revoked: [calculator-requests-0]
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Member consumer-calculator-core-group-2-c4d09ac1-838e-4ac3-b9b8-76a14c060079 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Member consumer-calculator-group-1-314aae15-3e07-4021-a55b-69aad5b599a0 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Unsubscribed all topics or patterns and assigned partitions
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Unsubscribed all topics or patterns and assigned partitions
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 13:31:23 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Request joining group due to: consumer pro-actively leaving the group
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-calculator-group-1 unregistered
+2025-09-17 13:31:24 INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-calculator-core-group-2 unregistered
+2025-09-17 13:31:24 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-group: Consumer stopped
+2025-09-17 13:31:24 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: Consumer stopped
+2025-09-17 13:31:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-17 13:31:24 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-17 13:31:24 INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-17 13:31:24 INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-17 13:31:24 INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.producer for producer-1 unregistered
+2025-09-17 13:31:31 INFO  app.CalculatorRestApplication - Starting CalculatorRestApplication using Java 17.0.16 with PID 2860 (/Users/beatrizseco/Desktop/Elias Code/calculator/calculator-rest/target/classes started by beatrizseco in /Users/beatrizseco/Desktop/Elias Code/calculator)
+2025-09-17 13:31:31 INFO  app.CalculatorRestApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-17 13:31:32 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-09-17 13:31:32 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-09-17 13:31:32 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-17 13:31:32 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-09-17 13:31:32 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-17 13:31:32 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1354 ms
+2025-09-17 13:31:33 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-09-17 13:31:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-09-17 13:31:33 INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-09-17 13:31:33 INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112293679
+2025-09-17 13:31:33 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Subscribed to topic(s): calculator-responses
+2025-09-17 13:31:33 INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-calculator-core-group-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = calculator-core-group
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.header.urlencode = false
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-09-17 13:31:33 INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-17 13:31:33 INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1758112293705
+2025-09-17 13:31:33 INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Subscribed to topic(s): calculator-requests
+2025-09-17 13:31:33 INFO  app.CalculatorRestApplication - Started CalculatorRestApplication in 3.845 seconds (process running for 4.898)
+2025-09-17 13:31:34 INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 13:31:34 INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Cluster ID: tJ0aBaXST5Oq-h2OOsbtpw
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] (Re-)joining group
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Request joining group due to: need to re-join with the given member-id: consumer-calculator-group-1-45faa804-d8b7-4084-9b66-889cfdc039af
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Request joining group due to: need to re-join with the given member-id: consumer-calculator-core-group-2-285be492-8fc2-44b7-bf2b-5767a6d16f2c
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] (Re-)joining group
+2025-09-17 13:31:34 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] (Re-)joining group
+2025-09-17 13:31:36 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully joined group with generation Generation{generationId=8, memberId='consumer-calculator-core-group-2-285be492-8fc2-44b7-bf2b-5767a6d16f2c', protocol='range'}
+2025-09-17 13:31:36 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Successfully synced group in generation Generation{generationId=8, memberId='consumer-calculator-core-group-2-285be492-8fc2-44b7-bf2b-5767a6d16f2c', protocol='range'}
+2025-09-17 13:31:36 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Notifying assignor about the new Assignment(partitions=[])
+2025-09-17 13:31:36 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-core-group-2, groupId=calculator-core-group] Adding newly assigned partitions: 
+2025-09-17 13:31:36 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-core-group: partitions assigned: []
+2025-09-17 13:31:37 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Successfully joined group with generation Generation{generationId=5, memberId='consumer-calculator-group-1-45faa804-d8b7-4084-9b66-889cfdc039af', protocol='range'}
+2025-09-17 13:31:37 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Finished assignment for group at generation 5: {consumer-calculator-group-1-45faa804-d8b7-4084-9b66-889cfdc039af=Assignment(partitions=[calculator-responses-0])}
+2025-09-17 13:31:37 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Successfully synced group in generation Generation{generationId=5, memberId='consumer-calculator-group-1-45faa804-d8b7-4084-9b66-889cfdc039af', protocol='range'}
+2025-09-17 13:31:37 INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Notifying assignor about the new Assignment(partitions=[calculator-responses-0])
+2025-09-17 13:31:37 INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-calculator-group-1, groupId=calculator-group] Adding newly assigned partitions: calculator-responses-0
+2025-09-17 13:31:37 INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition calculator-responses-0 to the committed offset FetchPosition{offset=3, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-17 13:31:37 INFO  o.s.k.l.KafkaMessageListenerContainer - calculator-group: partitions assigned: [calculator-responses-0]
