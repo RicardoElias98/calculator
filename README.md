@@ -4,8 +4,9 @@ I'm using Java 17
 ***
 ## Build Instructions
 
-    1. mvn clean package
-    2. docker-compose up -d --build
+    1. mvn clean install
+    2. mvn clean package
+    3. docker-compose up -d --build
 
 **BEFORE TESTING**
 
