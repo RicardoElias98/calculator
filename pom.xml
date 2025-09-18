@@ -13,9 +13,9 @@
     <description>Parent POM for Calculator multi-module project</description>
 
     <modules>
+        <module>calculator-common</module>
         <module>calculator-core</module>
         <module>calculator-rest</module>
-        <module>calculator-common</module>
     </modules>
 
     <properties>

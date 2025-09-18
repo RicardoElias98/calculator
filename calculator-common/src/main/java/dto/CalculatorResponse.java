@@ -1,7 +1,6 @@
 package dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-
 import java.math.BigDecimal;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -11,13 +10,13 @@ public class CalculatorResponse {
 
     public CalculatorResponse() {}
 
-    public CalculatorResponse(BigDecimal result) {
-        this.result = result;
-    }
-
     public CalculatorResponse(BigDecimal result, String error) {
         this.result = result;
         this.error = error;
+    }
+
+    public CalculatorResponse(BigDecimal result) {
+        this.result = result;
     }
 
     public BigDecimal getResult() {

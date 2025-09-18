@@ -1,6 +1,6 @@
 <configuration>
 
-    <property name="LOG_PATH" value="./logs"/>
+    <property name="LOG_PATH" value="../logs"/>
     <property name="spring.application.name" value="calculator-core"/>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">

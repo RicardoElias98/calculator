@@ -1,30 +1,15 @@
-`Hey, my name is Ricardo Elias and here is my Backend Software Engineer Challenge
+`Hey, my name is Ricardo Elias and here is my Backend Software Engineer Challenge!
+I'm using Java 17
 `
 ***
 ## Build Instructions
 
-    From the root folder run: 
-    mvn clean install
+    1. mvn clean package
+    2. docker-compose up -d --build
 
-**Start Kafka**
+**BEFORE TESTING**
 
-    docker-compose up -d
-
-**Start Core Module**
-
-    In a separate terminal, run:
-
-    1) cd calculator-core
-
-    2) mvn spring-boot:run
-
-**Start REST Module**
-
-    In another terminal, run:
-    
-    1) cd calculator-rest
-    
-    2) mvn spring-boot:run
+    Make sure with "docker-compose logs -f calculator-rest" and "docker-compose logs -f calculator-core" that everything is ready
 
 ## NOW YOU CAN TEST
 
